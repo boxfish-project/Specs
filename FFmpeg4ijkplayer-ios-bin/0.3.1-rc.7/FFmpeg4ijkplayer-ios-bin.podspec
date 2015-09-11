@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '6.0'
 
-  s.source       = { :git => "https://github.com/Bilibili/FFmpeg4ijkplayer-ios-bin.git", :tag => s.version }
+  # s.source       = { :git => "https://github.com/Bilibili/FFmpeg4ijkplayer-ios-bin.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/Bilibili/FFmpeg4ijkplayer-ios-bin.git" }
 
   s.requires_arc = false
   s.libraries    = 'z', 'bz2'
