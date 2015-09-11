@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     ss.source_files         = 'include/**/*.h'
     ss.public_header_files  = 'include/**/*.h'
     ss.header_mappings_dir  = 'include'
-    ss.vendored_libraries   = 'lib/**/*.a'
+    ss.vendored_libraries   = 'lib/*.a','lib/**/*.a'
 end
 
 end
