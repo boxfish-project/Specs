@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "FFmpeg4ijkplayer-ios-bin"
 
   # <ijkplayer-tag> - rev.<revision> - <FFmpeg hash>
-  s.version      = "0.3.1-rc.7"
+  s.version      = "ffmpeg-build-20150911"
   s.summary      = "FFmpeg n2.7 build for ijkplayer on iOS platform."
   s.homepage     = "https://github.com/Bilibili/FFmpeg4ijkplayer-ios-bin"
 
@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '6.0'
 
-  # s.source       = { :git => "https://github.com/Bilibili/FFmpeg4ijkplayer-ios-bin.git", :tag => s.version }
-  s.source       = { :git => "https://github.com/Bilibili/FFmpeg4ijkplayer-ios-bin.git" }
+  s.source       = { :git => "https://github.com/boxfish-project/FFmpeg4ijkplayer-ios-bin.git", :tag => s.version }
 
   s.requires_arc = false
   s.libraries    = 'z', 'bz2'
@@ -22,7 +21,7 @@ Pod::Spec.new do |s|
     ss.source_files         = 'include/**/*.h'
     ss.public_header_files  = 'include/**/*.h'
     ss.header_mappings_dir  = 'include'
-    ss.vendored_libraries   = 'lib/*.a','lib/**/*.a'
-end
+    ss.vendored_libraries   = 'lib/**/*.a'
+  end
 
 end
