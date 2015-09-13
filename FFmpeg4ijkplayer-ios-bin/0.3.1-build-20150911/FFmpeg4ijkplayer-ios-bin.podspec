@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = "FFmpeg4ijkplayer-ios-bin"
 
   # <ijkplayer-tag> - rev.<revision> - <FFmpeg hash>
-  s.version      = "ffmpeg-build-20150911"
+  s.version      = "0.3.1-build-20150911"
   s.summary      = "FFmpeg n2.7 build for ijkplayer on iOS platform."
   s.homepage     = "https://github.com/Bilibili/FFmpeg4ijkplayer-ios-bin"
 
