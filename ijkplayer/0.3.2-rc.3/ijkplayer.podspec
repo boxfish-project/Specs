@@ -91,7 +91,7 @@ end
 end
 
   s.subspec 'ijksdl' do |ss|
-    ss.dependency 'FFmpeg4ijkplayer-ios-bin', '0.3.1-build-20150915'
+    ss.dependency 'FFmpeg4ijkplayer-ios-bin', '0.3.1-build-20150916'
 
     ss.source_files         = 'ijkmedia/ijksdl/**/*.{c,h}'
     ss.private_header_files = 'ijkmedia/ijksdl/**/*.h'
