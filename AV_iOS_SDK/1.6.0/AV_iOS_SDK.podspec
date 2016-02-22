@@ -94,6 +94,7 @@ Pod::Spec.new do |s|
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/AV_iOS_SDK/libs', 'OTHER_LDFLAGS' => '-ObjC' }
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -143,7 +144,6 @@ Pod::Spec.new do |s|
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.ios.frameworks = 'AVFoundation'
     # ss.osx.frameworks = 'CoreServices'
-    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/AVFoundationEx.FrameWork"', 'OTHER_LDFLAGS' => '-ObjC' }
 
   end
 
