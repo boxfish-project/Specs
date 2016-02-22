@@ -90,11 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}",
-                "ImSDK.framework", "ImSDK.framework/ImSDK","ImSDK.framework/**/*.*",
-                "QALSDK.framework", "QALSDK.framework/QALSDK", "QALSDK.framework/**/*.*",
-                "QAVSDK.framework", "QAVSDK.framework/QAVSDK" , "QAVSDK.framework/**/*.*",
-                "TLSSDK.framework", "TLSSDK.framework/TLSSDK", "TLSSDK.framework/**/*.*"
+  s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -146,6 +142,42 @@ Pod::Spec.new do |s|
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.ios.frameworks = 'AVFoundation'
+    # ss.osx.frameworks = 'CoreServices'
+  end
+
+  s.subspec 'ImSDK' do |ss|
+    ss.source_files = "ImSDK.framework", "ImSDK.framework/ImSDK","ImSDK.framework/**/*.*"
+    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    ss.ios.frameworks = 'AVFoundation'
+    # ss.osx.frameworks = 'CoreServices'
+  end
+
+  s.subspec 'QALSDK' do |ss|
+    ss.source_files = "QALSDK.framework", "QALSDK.framework/QALSDK", "QALSDK.framework/**/*.*"
+    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'AVFoundation'
+    # ss.osx.frameworks = 'CoreServices'
+  end
+
+  s.subspec 'QAVSDK' do |ss|
+    ss.source_files = "QAVSDK.framework", "QAVSDK.framework/QAVSDK" , "QAVSDK.framework/**/*.*"
+    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'AVFoundation'
+    # ss.osx.frameworks = 'CoreServices'
+  end
+
+  s.subspec 'TLSSDK' do |ss|
+    ss.source_files = "TLSSDK.framework", "TLSSDK.framework/TLSSDK", "TLSSDK.framework/**/*.*"
+    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'AVFoundation'
     # ss.osx.frameworks = 'CoreServices'
   end
 
