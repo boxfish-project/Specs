@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
   s.subspec 'AVFoundationEx' do |ss|
-    ss.vendored_frameworks = 'libs/AVFoundationEx.FrameWork'
+    ss.vendored_frameworks = 'AVFoundationEx.FrameWork'
     # ss.source_files = "libs/AVFoundationEx.FrameWork", "libs/AVFoundationEx.FrameWork/AVFoundationEx",
       # "libs/AVFoundationEx.FrameWork/**/*.*"
     # ss.public_header_files = 'libs/AVFoundationEx.FrameWork/Headers/*.h'
@@ -148,32 +148,36 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ImSDK' do |ss|
-    ss.source_files = "libs/ImSDK.framework", "libs/ImSDK.framework/ImSDK","libs/ImSDK.framework/**/*.*"
-    ss.public_header_files = 'libs/ImSDK.framework/Headers/*.h'
+    # ss.source_files = "libs/ImSDK.framework", "libs/ImSDK.framework/ImSDK","libs/ImSDK.framework/**/*.*"
+    # ss.public_header_files = 'libs/ImSDK.framework/Headers/*.h'
+    ss.vendored_frameworks = 'ImSDK.FrameWork'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
   end
 
   s.subspec 'QALSDK' do |ss|
-    ss.source_files = "libs/QALSDK.framework", "libs/QALSDK.framework/QALSDK", "libs/QALSDK.framework/**/*.*"
-    ss.public_header_files = 'libs/QALSDK.framework/Headers/*.h'
+    # ss.source_files = "libs/QALSDK.framework", "libs/QALSDK.framework/QALSDK", "libs/QALSDK.framework/**/*.*"
+    # ss.public_header_files = 'libs/QALSDK.framework/Headers/*.h'
+    ss.vendored_frameworks = 'QALSDK.FrameWork'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
   end
 
   s.subspec 'QAVSDK' do |ss|
-    ss.source_files = "libs/QAVSDK.framework", "libs/QAVSDK.framework/QAVSDK" , "libs/QAVSDK.framework/**/*.*"
-    ss.public_header_files = 'libs/QAVSDK.framework/Headers/*.h'
+    # ss.source_files = "libs/QAVSDK.framework", "libs/QAVSDK.framework/QAVSDK" , "libs/QAVSDK.framework/**/*.*"
+    # ss.public_header_files = 'libs/QAVSDK.framework/Headers/*.h'
+    ss.vendored_frameworks = 'QAVSDK.FrameWork'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
   end
 
   s.subspec 'TLSSDK' do |ss|
-    ss.source_files = "libs/TLSSDK.framework", "libs/TLSSDK.framework/TLSSDK", "libs/TLSSDK.framework/**/*.*"
-    ss.public_header_files = 'libs/TLSSDK.framework/Headers/*.h'
+    # ss.source_files = "libs/TLSSDK.framework", "libs/TLSSDK.framework/TLSSDK", "libs/TLSSDK.framework/**/*.*"
+    # ss.public_header_files = 'libs/TLSSDK.framework/Headers/*.h'
+    ss.vendored_frameworks = 'TLSSDK.FrameWork'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
