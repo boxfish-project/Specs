@@ -141,7 +141,7 @@ Pod::Spec.new do |s|
     # ss.public_header_files = 'libs/AVFoundationEx.FrameWork/Headers/*.h'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
-    ss.ios.frameworks = 'AVFoundation'
+    ss.ios.frameworks = 'AVFoundation', 'CoreAudio'
     # ss.osx.frameworks = 'CoreServices'
 
   end
