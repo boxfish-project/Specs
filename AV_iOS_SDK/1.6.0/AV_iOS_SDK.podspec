@@ -137,7 +137,7 @@ Pod::Spec.new do |s|
   s.subspec 'AVFoundationEx' do |ss|
     ss.source_files = "libs/AVFoundationEx.FrameWork", "libs/AVFoundationEx.FrameWork/AVFoundationEx",
       "libs/AVFoundationEx.FrameWork/**/*.*"
-    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    ss.public_header_files = 'libs/AVFoundationEx.FrameWork/Headers/*.h'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.ios.frameworks = 'AVFoundation'
@@ -146,7 +146,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'ImSDK' do |ss|
     ss.source_files = "libs/ImSDK.framework", "libs/ImSDK.framework/ImSDK","libs/ImSDK.framework/**/*.*"
-    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    ss.public_header_files = 'libs/ImSDK.framework/Headers/*.h'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
@@ -154,7 +154,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'QALSDK' do |ss|
     ss.source_files = "libs/QALSDK.framework", "libs/QALSDK.framework/QALSDK", "libs/QALSDK.framework/**/*.*"
-    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    ss.public_header_files = 'libs/QALSDK.framework/Headers/*.h'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
@@ -162,7 +162,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'QAVSDK' do |ss|
     ss.source_files = "libs/QAVSDK.framework", "libs/QAVSDK.framework/QAVSDK" , "libs/QAVSDK.framework/**/*.*"
-    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    ss.public_header_files = 'libs/QAVSDK.framework/Headers/*.h'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
@@ -170,7 +170,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'TLSSDK' do |ss|
     ss.source_files = "libs/TLSSDK.framework", "libs/TLSSDK.framework/TLSSDK", "libs/TLSSDK.framework/**/*.*"
-    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    ss.public_header_files = 'libs/TLSSDK.framework/Headers/*.h'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.osx.frameworks = 'CoreServices'
