@@ -91,8 +91,6 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}",
-                "AVFoundationEx.FrameWork", "AVFoundationEx.FrameWork/AVFoundationEx",
-                "AVFoundationEx.FrameWork/**/*.*",
                 "ImSDK.framework", "ImSDK.framework/ImSDK","ImSDK.framework/**/*.*",
                 "QALSDK.framework", "QALSDK.framework/QALSDK", "QALSDK.framework/**/*.*",
                 "QAVSDK.framework", "QAVSDK.framework/QAVSDK" , "QAVSDK.framework/**/*.*",
@@ -139,5 +137,16 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+  s.subspec 'AVFoundationEx' do |ss|
+    # ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
+    ss.source_files = "AVFoundationEx.FrameWork", "AVFoundationEx.FrameWork/AVFoundationEx",
+      "AVFoundationEx.FrameWork/**/*.*"
+    # ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
+    # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    ss.ios.frameworks = 'AVFoundation'
+    # ss.osx.frameworks = 'CoreServices'
+  end
 
 end
