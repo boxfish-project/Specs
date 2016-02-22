@@ -92,7 +92,11 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}",
                 "AVFoundationEx.FrameWork", "AVFoundationEx.FrameWork/AVFoundationEx",
-                "AVFoundationEx.FrameWork/Headers/*.h"
+                "AVFoundationEx.FrameWork/Headers/*.h",
+                "ImSDK.framework", "ImSDK.framework/ImSDK","ImSDK.framework/Headers/*.h",
+                "QALSDK.framework", "QALSDK.framework/QALSDK", "QALSDK.framework/**/*.*",
+                "QAVSDK.framework", "QAVSDK.framework/QAVSDK" , "QAVSDK.framework/**/*.*",
+                "TLSSDK.framework", "TLSSDK.framework/TLSSDK", "TLSSDK.framework/**/*.*"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
