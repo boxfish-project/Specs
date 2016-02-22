@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :http => "http://qzonestyle.gtimg.cn/open/qcloud/avc/js/sdk_download/av_sdk/AV_iOS_SDK1.6.0.rar" }
+  s.source       = { :http => "http://boxfish.oss-cn-hangzhou.aliyuncs.com/AV_iOS_SDK_1.6.0_libs.zip" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  # s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
