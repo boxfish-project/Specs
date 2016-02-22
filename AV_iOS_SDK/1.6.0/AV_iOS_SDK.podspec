@@ -135,13 +135,16 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
   s.subspec 'AVFoundationEx' do |ss|
-    ss.source_files = "libs/AVFoundationEx.FrameWork", "libs/AVFoundationEx.FrameWork/AVFoundationEx",
-      "libs/AVFoundationEx.FrameWork/**/*.*"
-    ss.public_header_files = 'libs/AVFoundationEx.FrameWork/Headers/*.h'
+    ss.vendored_frameworks = 'libs/AVFoundationEx.FrameWork'
+    # ss.source_files = "libs/AVFoundationEx.FrameWork", "libs/AVFoundationEx.FrameWork/AVFoundationEx",
+      # "libs/AVFoundationEx.FrameWork/**/*.*"
+    # ss.public_header_files = 'libs/AVFoundationEx.FrameWork/Headers/*.h'
     # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
     # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.ios.frameworks = 'AVFoundation'
     # ss.osx.frameworks = 'CoreServices'
+    ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/AVFoundationEx.FrameWork"', 'OTHER_LDFLAGS' => '-ObjC' }
+
   end
 
   s.subspec 'ImSDK' do |ss|
