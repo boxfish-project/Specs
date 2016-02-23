@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #
 
   # s.source       = { :http => "http://boxfish.oss-cn-hangzhou.aliyuncs.com/AV_iOS_SDK_1.6.0_libs.zip" }
-
+  s.source = { :git => "https://github.com/undancer/cloud-config-repo" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
