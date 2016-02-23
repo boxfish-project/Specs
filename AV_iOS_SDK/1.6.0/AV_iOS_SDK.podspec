@@ -124,7 +124,7 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.libraries = 'iconv', 'sqlite3', 'z', 'c++', 'stdc++',
+  s.libraries = 'iconv', 'sqlite3', 'z', 'c++', 'stdc++'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
