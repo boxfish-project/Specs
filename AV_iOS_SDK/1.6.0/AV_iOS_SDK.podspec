@@ -97,7 +97,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = "Classes/**/*.h"
   # s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/AV_iOS_SDK/libs', 'OTHER_LDFLAGS' => '-ObjC' }
   # s.vendored_frameworks = 'libs/AVFoundationEx.FrameWork', 'libs/ImSDK.framework', 'libs/QALSDK.framework', 'libs/QAVSDK.framework', 'libs/TLSSDK.framework'
-  s.vendored_frameworks = 'libs/ImSDK.framework', 'libs/QALSDK.framework', 'libs/QAVSDK.framework', 'libs/TLSSDK.framework'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -125,8 +124,7 @@ Pod::Spec.new do |s|
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.libraries = 'iconv', 'sqlite3', 'z'
-  # 'c++', 'stdc++',
+  s.libraries = 'iconv', 'sqlite3', 'z', 'c++', 'stdc++',
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
