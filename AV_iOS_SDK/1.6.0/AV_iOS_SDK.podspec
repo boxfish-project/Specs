@@ -65,6 +65,7 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
   # s.platform     = :ios, "5.0"
+  s.platform     = :ios
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -97,8 +98,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/AV_iOS_SDK/libs', 'OTHER_LDFLAGS' => '-ObjC' }
   # s.vendored_frameworks = 'libs/AVFoundationEx.FrameWork', 'libs/ImSDK.framework', 'libs/QALSDK.framework', 'libs/QAVSDK.framework', 'libs/TLSSDK.framework'
   s.vendored_frameworks = 'libs/ImSDK.framework', 'libs/QALSDK.framework', 'libs/QAVSDK.framework', 'libs/TLSSDK.framework'
-  s.frameworks = 'AVFoundation', 'CoreGraphics', 'OpenGLES', 'CoreImage', 'QuartzCore', 'CoreMedia', 'UIKit', 'CoreVideo', 'AudioToolbox', 'CoreAudio'
-  s.libraries = 'z', 'sqlite3', 'c++', 'stdc++', 'iconv'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -122,9 +121,12 @@ Pod::Spec.new do |s|
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = 'AVFoundation', 'CoreGraphics', 'OpenGLES', 'CoreImage', 'QuartzCore', 'CoreMedia', 'UIKit', 'CoreVideo', 'AudioToolbox', 'CoreAudio'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
+  s.libraries = 'iconv', 'sqlite3', 'z'
+  # 'c++', 'stdc++',
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -137,53 +139,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
-  # s.subspec 'AVFoundationEx' do |ss|
-  #   ss.vendored_frameworks = 'libs/AVFoundationEx.FrameWork'
-  #   # ss.source_files = "libs/AVFoundationEx.FrameWork", "libs/AVFoundationEx.FrameWork/AVFoundationEx",
-  #     # "libs/AVFoundationEx.FrameWork/**/*.*"
-  #   # ss.public_header_files = 'libs/AVFoundationEx.FrameWork/Headers/*.h'
-  #   # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   ss.frameworks = 'AVFoundation', 'CoreAudio'
-  #   # ss.osx.frameworks = 'CoreServices'
-  #
-  # end
-
-  # s.subspec 'ImSDK' do |ss|
-  #   # ss.source_files = "libs/ImSDK.framework", "libs/ImSDK.framework/ImSDK","libs/ImSDK.framework/**/*.*"
-  #   # ss.public_header_files = 'libs/ImSDK.framework/Headers/*.h'
-  #   ss.vendored_frameworks = 'libs/ImSDK.framework'
-  #   # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.osx.frameworks = 'CoreServices'
-  # end
-
-  # s.subspec 'QALSDK' do |ss|
-  #   # ss.source_files = "libs/QALSDK.framework", "libs/QALSDK.framework/QALSDK", "libs/QALSDK.framework/**/*.*"
-  #   # ss.public_header_files = 'libs/QALSDK.framework/Headers/*.h'
-  #   ss.vendored_frameworks = 'libs/QALSDK.framework'
-  #   # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.osx.frameworks = 'CoreServices'
-  # end
-
-  # s.subspec 'QAVSDK' do |ss|
-  #   # ss.source_files = "libs/QAVSDK.framework", "libs/QAVSDK.framework/QAVSDK" , "libs/QAVSDK.framework/**/*.*"
-  #   # ss.public_header_files = 'libs/QAVSDK.framework/Headers/*.h'
-  #   ss.vendored_frameworks = 'libs/QAVSDK.framework'
-  #   # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.osx.frameworks = 'CoreServices'
-  # end
-
-  # s.subspec 'TLSSDK' do |ss|
-  #   # ss.source_files = "libs/TLSSDK.framework", "libs/TLSSDK.framework/TLSSDK", "libs/TLSSDK.framework/**/*.*"
-  #   # ss.public_header_files = 'libs/TLSSDK.framework/Headers/*.h'
-  #   ss.vendored_frameworks = 'libs/TLSSDK.framework'
-  #   # ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
-  #   # ss.osx.frameworks = 'CoreServices'
-  # end
 
 end
