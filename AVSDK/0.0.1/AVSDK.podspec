@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #
 
   # s.source       = { :git => "http://EXAMPLE/AVSDK.git", :tag => "#{s.version}" }
-  s.source       = { :http => "http://dldir1.qq.com/hudongzhibo/ILiveSDK/AVSDK1.8.4_BETA.zip" }
+  s.source       = { :http => "http://dldir1.qq.com/hudongzhibo/ILiveSDK/AVSDK1.8.4_BETA.zip", :sha1 => "6047733ca8d56903dfd1b117641a5e6420881adc" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.vendored_frameworks = "Libs/QAVSDK.framework","Libs/xplatform.framework"
+  s.vendored_frameworks = "AVSDK/QAVSDK.framework","AVSDK/xplatform.framework"
 
 
 

@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #
 
   # s.source       = { :git => "http://EXAMPLE/IMSDK.git", :tag => "#{s.version}" }
-  s.source       = { :http => "http://dldir1.qq.com/hudongzhibo/ILiveSDK/IMSDK_beta.zip" }
+  s.source       = { :http => "http://dldir1.qq.com/hudongzhibo/ILiveSDK/IMSDK_beta.zip", :sha1 => "3507235589818408ad4f85b790688e5d84c807a3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
