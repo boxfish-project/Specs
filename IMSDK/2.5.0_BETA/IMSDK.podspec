@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "IMSDK"
-  s.version      = "0.0.1"
+  s.version      = "2.5.0_BETA"
   s.summary      = "腾讯云-云通信"
 
   # This description is used to generate tags and improve search results.
@@ -122,6 +122,7 @@ Pod::Spec.new do |s|
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "CoreTelephony", "SystemConfiguration"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

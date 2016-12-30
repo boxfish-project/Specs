@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AVSDK"
-  s.version      = "0.0.1"
+  s.version      = "1.8.4_BETA"
   s.summary      = "腾讯云-互动直播"
 
   # This description is used to generate tags and improve search results.
