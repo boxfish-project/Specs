@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint AVSDK.podspec' to ensure this is a
+#  Be sure to run `pod spec lint IMSDK.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "AVSDK"
-  s.version      = "1.8.4_BETA"
-  s.summary      = "腾讯云-互动直播"
+  s.name         = "IMSDK"
+  s.version      = "2.5.0-beta"
+  s.summary      = "腾讯云-云通信"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  腾讯云-互动直播
+  腾讯云-云通信
                    DESC
 
-  s.homepage     = "https://www.qcloud.com/document/product/268/7660"
+  s.homepage     = "https://www.qcloud.com/document/product/269/1565"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,8 +80,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  # s.source       = { :git => "http://EXAMPLE/AVSDK.git", :tag => "#{s.version}" }
-  s.source       = { :http => "http://dldir1.qq.com/hudongzhibo/ILiveSDK/AVSDK1.8.4_BETA.zip", :sha1 => "6047733ca8d56903dfd1b117641a5e6420881adc" }
+  # s.source       = { :git => "http://EXAMPLE/IMSDK.git", :tag => "#{s.version}" }
+  s.source       = { :http => "http://dldir1.qq.com/hudongzhibo/ILiveSDK/IMSDK_beta.zip", :sha1 => "3507235589818408ad4f85b790688e5d84c807a3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -96,8 +96,7 @@ Pod::Spec.new do |s|
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
-
-  s.vendored_frameworks = "AVSDK/QAVSDK.framework","AVSDK/xplatform.framework"
+  s.vendored_frameworks = "IMSDK/IMCore.framework","IMSDK/ImSDK.framework","IMSDK/QALSDK.framework","IMSDK/IMSDKBugly.framework","IMSDK/TLSSDK.framework"
 
 
 
@@ -123,12 +122,12 @@ Pod::Spec.new do |s|
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
-
-  s.frameworks = "UIKit","CoreVideo","CoreMedia","Accelerate","Foundation","AVFoundation","AudioToolbox","VideoToolbox","CoreGraphics","CoreTelephony","SystemConfiguration"
+  s.frameworks = "CoreTelephony", "SystemConfiguration"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.libraries = "c++","stdc++","stdc++.6","z","sqlite3","iconv","resolv","protobuf" #"z2",
+  s.libraries = "c++", "z", "sqlite3"
+
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -141,7 +140,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency "IMSDK", "2.5.0_BETA"
-
 
 end
